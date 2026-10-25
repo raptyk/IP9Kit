@@ -5,7 +5,7 @@ Biblioteka PlatformIO (`library.json`), przestrzeń nazw `ip9`, include'y z pref
 
 ## Repozytoria
 
-Każda aplikacja to osobne repozytorium obok tego katalogu (`C:\Projekty\ip9.pl\cardputer.ip9.pl\`):
+Każda aplikacja to osobne repozytorium w katalogu obok IP9Kit:
 `IP9LGRemote`, `IP9VoiceRec`, … Aplikacje pobierają IP9Kit przez `lib_deps` z przypiętym tagiem
 (`[ip9kit] source = https://github.com/raptyk/IP9Kit.git#vX.Y.Z`); lokalnie `ip9kit-local.ini`
 w aplikacji przełącza na `symlink://../IP9Kit`.
