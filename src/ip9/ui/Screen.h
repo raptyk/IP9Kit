@@ -27,6 +27,8 @@ public:
     // Draws the content area (between status bar and footer).
     virtual void draw(M5Canvas& canvas, int top, int height) = 0;
     virtual const char* footer() const { return nullptr; }
+    // True: draw() gets the whole display (top 0, full height); no status bar, footer or toast.
+    virtual bool fullScreen() const { return false; }
     // Chip on the left of the status bar: which section this is. nullptr leaves the chip
     // to the app (Shell::statusLine), e.g. the active link mode of a remote.
     virtual const char* chipLabel() const { return nullptr; }

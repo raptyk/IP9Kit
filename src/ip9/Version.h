@@ -5,7 +5,7 @@
 namespace ip9 {
 
 // Keep in sync with library.json.
-constexpr const char* kKitVersion = "1.0.0";
+constexpr const char* kKitVersion = "1.1.0";
 // Home of the IP9 Cardputer apps, shown in the apps' About screens.
 constexpr const char* kBrandUrl = "cardputer.ip9.pl";
 

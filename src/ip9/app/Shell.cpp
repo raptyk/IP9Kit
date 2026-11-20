@@ -195,9 +195,14 @@ void Shell::render() {
     lastRenderAt_ = millis();
     canvas_.fillScreen(theme::kBackground);
 
+    Screen& screen = *screens_.back();
+    if (screen.fullScreen()) {
+        screen.draw(canvas_, 0, theme::kScreenHeight);
+        canvas_.pushSprite(0, 0);
+        return;
+    }
     const int contentTop = theme::kStatusBarHeight;
     const int contentHeight = theme::kScreenHeight - theme::kStatusBarHeight - theme::kFooterHeight;
-    Screen& screen = *screens_.back();
     screen.draw(canvas_, contentTop, contentHeight);
 
     drawStatusBar();

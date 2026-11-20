@@ -1,6 +1,6 @@
 {
   "name": "IP9Kit",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Shared core of the IP9 apps for M5Stack Cardputer and Cardputer ADV: app shell with screen stack, status bar and toasts, list / carousel / help / dialog screens, keyboard events, status LED, battery and backlight.",
   "keywords": "cardputer, m5stack, esp32-s3, ui, framework",
   "homepage": "https://cardputer.ip9.pl",
